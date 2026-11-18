@@ -1,2 +1,8 @@
 .venv/
 1/mass.bin
+1/build/temp.win-amd64-cpython-313/Release/sum_squares.obj
+1/build/temp.win-amd64-cpython-313/Release/sum_squares.cp313-win_amd64.exp
+1/build/temp.win-amd64-cpython-313/Release/sum_squares.cp313-win_amd64.lib
+1/build/lib.win-amd64-cpython-313/sum_squares.cp313-win_amd64.pyd
+1/sum_squares.cp313-win_amd64.pyd
+1/sum_squares.c
