@@ -1,6 +1,6 @@
 import numpy as np
 
-A = np.random.randint(0, 9, size=(4, 5))
+A = np.random.randint(-9, 9, size=(4, 5))
 print(A)
-print(A[[0, 2, 3]][:,[1, 4]])
-
+A[A < 0] = 0
+print(A)
