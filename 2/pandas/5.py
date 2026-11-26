@@ -12,7 +12,7 @@ df = pd.merge(df, managers, on='department', how='left')
 manager = managers.loc[managers['department'] == 'IT', 'manager'].iloc[0]
 
 newEmployee = pd.DataFrame([{
-    'name': 'Смирнов Алексей',
+    'name': 'John',
     'department': 'IT',
     'salary': 120000,
     'bonus': 15000,
