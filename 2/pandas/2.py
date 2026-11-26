@@ -23,3 +23,5 @@ print(df[['name', 'salary', 'bonus', 'total_comp']])
 df = df.drop('hire_date', axis=1)
 print("Таблица после удаления hire_date")
 print(df)
+
+df.to_pickle('data.pkl')

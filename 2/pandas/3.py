@@ -1,9 +1,5 @@
 import pandas as pd
-
-from data import data
-df = pd.DataFrame(data)
-df['total_comp'] = df['salary'] + df['bonus'].fillna(0)
-df = df.drop('hire_date', axis=1)
+df = pd.read_pickle('data.pkl')
 
 count = df.isna().sum()
 print("Количество пропусков в каждом столбце:\n", count)
@@ -17,3 +13,6 @@ df['bonus'] = df['bonus'].fillna(0)
 df = df.dropna(subset=['salary'])
 
 print(df)
+
+df.to_pickle('data.pkl')
+
